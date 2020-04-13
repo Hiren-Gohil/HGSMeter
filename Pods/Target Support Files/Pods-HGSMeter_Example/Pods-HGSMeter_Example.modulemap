@@ -1,0 +1,6 @@
+framework module Pods_HGSMeter_Example {
+  umbrella header "Pods-HGSMeter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

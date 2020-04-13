@@ -1,0 +1,22 @@
+{
+  "name": "HGSMeter",
+  "version": "0.1.0",
+  "summary": "A short description of HGSMeter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Hiren-Gohil/HGSMeter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Hiren-Gohil": "hirengohil.spaceo@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Hiren-Gohil/HGSMeter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HGSMeter/Classes/**/*"
+}
