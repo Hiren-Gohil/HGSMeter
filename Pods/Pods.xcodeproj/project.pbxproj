@@ -10,7 +10,7 @@
 		26FF98E567DE648427A63E1C5FAA4872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		284BFE516C10407A4991117929A98883 /* HGSMeter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A067BED728247195FC79BE5416B6C75 /* HGSMeter-dummy.m */; };
 		3ED229C0A7161B2CEAE385F6FBAE9A7C /* Pods-HGSMeter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F4CC03A36DE9F4898A829364180FE1 /* Pods-HGSMeter_Tests-dummy.m */; };
-		4475708C93FCC9A60D65346E5A822E12 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE9A7A3E43B8D1CB7ED7CB86BF55D8 /* ReplaceMe.swift */; };
+		41D578DF24442826007B0E63 /* MeterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D578DE24442826007B0E63 /* MeterClass.swift */; };
 		4B062FD06444A03B2AFE7C06274566F0 /* Pods-HGSMeter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA3AB2558E287F961336B64927CEF8A /* Pods-HGSMeter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		869C44E397DE0DC2AE236FE48327DFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		87A3E0995475DA368E0B5567177D197B /* Pods-HGSMeter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACD7781D291EED2EE8EB02F7BF6873D /* Pods-HGSMeter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,9 +41,9 @@
 		1F76EAABE72BA459ABC29E4A8ED95DB2 /* Pods-HGSMeter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGSMeter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3105A13A316AE3AEA804F88F8FF43FEF /* Pods-HGSMeter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGSMeter_Example-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		39D0A38401E39A6D8E48573C8D0F54A5 /* Pods_HGSMeter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HGSMeter_Tests.framework; path = "Pods-HGSMeter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49A13EEFC0CDA229765B9C97E329B049 /* HGSMeter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HGSMeter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4BEE9A7A3E43B8D1CB7ED7CB86BF55D8 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HGSMeter/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		39D0A38401E39A6D8E48573C8D0F54A5 /* Pods_HGSMeter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGSMeter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D578DE24442826007B0E63 /* MeterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeterClass.swift; path = HGSMeter/Classes/MeterClass.swift; sourceTree = "<group>"; };
+		49A13EEFC0CDA229765B9C97E329B049 /* HGSMeter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HGSMeter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56899AE35CE5B4E76DCD9334BEB83736 /* HGSMeter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGSMeter-umbrella.h"; sourceTree = "<group>"; };
 		5C8922C40F7F10C1FA626A3B6BD30AA4 /* Pods-HGSMeter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGSMeter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		60D624ABEF1E71D7B9AAFDC919EE0387 /* HGSMeter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HGSMeter.modulemap; sourceTree = "<group>"; };
@@ -53,23 +53,23 @@
 		7ACD7781D291EED2EE8EB02F7BF6873D /* Pods-HGSMeter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HGSMeter_Example-umbrella.h"; sourceTree = "<group>"; };
 		8C4EB43BB63FE0021797CFD2C8A4F98B /* Pods-HGSMeter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGSMeter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A067BED728247195FC79BE5416B6C75 /* HGSMeter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HGSMeter-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2F4586435A4394121997DDBB5F174E9 /* Pods-HGSMeter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HGSMeter_Tests.modulemap"; sourceTree = "<group>"; };
 		B1E0F97F83108A81628A68640B4B5C73 /* Pods-HGSMeter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGSMeter_Tests-Info.plist"; sourceTree = "<group>"; };
 		B4E78DB2FFD5F15ED53621F3604D6856 /* Pods-HGSMeter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGSMeter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BB2EFF2DCB467DA7567A9468A546B018 /* HGSMeter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HGSMeter-Info.plist"; sourceTree = "<group>"; };
 		BDA3AB2558E287F961336B64927CEF8A /* Pods-HGSMeter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HGSMeter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C0C21E955638B24F0626449D53F1011A /* Pods_HGSMeter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HGSMeter_Example.framework; path = "Pods-HGSMeter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C89FE86BEBD3AD4C5D95AA803E416780 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C0C21E955638B24F0626449D53F1011A /* Pods_HGSMeter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGSMeter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89FE86BEBD3AD4C5D95AA803E416780 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C8A614D697B06BA78720E99F38A3313B /* Pods-HGSMeter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HGSMeter_Example.modulemap"; sourceTree = "<group>"; };
-		CF1FF08F088F46E8160823CD69675D6D /* HGSMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HGSMeter.framework; path = HGSMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1FF08F088F46E8160823CD69675D6D /* HGSMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HGSMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FE630786825A68E2851FCFCB6C9D5B /* HGSMeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGSMeter.release.xcconfig; sourceTree = "<group>"; };
 		E05F7E05CEB761DDB9293998DE76C57D /* Pods-HGSMeter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGSMeter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E48C6455B62734EB2C7A5AA604FA8B70 /* HGSMeter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGSMeter-prefix.pch"; sourceTree = "<group>"; };
 		E73508307640B3D569EC45C1A7A24D94 /* Pods-HGSMeter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HGSMeter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F3865BEC33CF85F43800F0FD9E205CDA /* Pods-HGSMeter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGSMeter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FB81D30C66EE0CF597147DE937392522 /* HGSMeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGSMeter.debug.xcconfig; sourceTree = "<group>"; };
-		FFEDE5ACE8A28630DA91859A423A48EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FFEDE5ACE8A28630DA91859A423A48EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		42B0E5BB4F0CDEEEBAC87C90FCA71302 /* HGSMeter */ = {
 			isa = PBXGroup;
 			children = (
-				4BEE9A7A3E43B8D1CB7ED7CB86BF55D8 /* ReplaceMe.swift */,
+				41D578DE24442826007B0E63 /* MeterClass.swift */,
 				ADF7E2A1000E5CB29EA17FDF49DE1670 /* Pod */,
 				F8CCD49B2B15753B767CB3AEB7978F9B /* Support Files */,
 			);
@@ -375,8 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D578DF24442826007B0E63 /* MeterClass.swift in Sources */,
 				284BFE516C10407A4991117929A98883 /* HGSMeter-dummy.m in Sources */,
-				4475708C93FCC9A60D65346E5A822E12 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,8 +625,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

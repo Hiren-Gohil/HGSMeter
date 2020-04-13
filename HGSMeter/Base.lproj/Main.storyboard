@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,44 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ5-sP-E80">
+                                <rect key="frame" x="109" y="168.5" width="157" height="118"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="50" maxX="50" maxY="50"/>
+                                <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="btnRandomTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vmz-Xs-zJv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="meE-XN-Nab">
+                                <rect key="frame" x="50" y="316.5" width="275" height="34"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4g-QR-EGd" customClass="HGSMeterClass" customModule="HGSMeter_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="F4g-QR-EGd" secondAttribute="height" multiplier="8" id="QrM-rg-MLy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aQ5-sP-E80" firstAttribute="centerX" secondItem="meE-XN-Nab" secondAttribute="centerX" id="C3m-Cl-UzF"/>
+                            <constraint firstAttribute="trailing" secondItem="meE-XN-Nab" secondAttribute="trailing" constant="50" id="Ke1-mC-IFO"/>
+                            <constraint firstItem="meE-XN-Nab" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Vt9-Wv-52g"/>
+                            <constraint firstItem="meE-XN-Nab" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="eQF-pd-vbp"/>
+                            <constraint firstItem="meE-XN-Nab" firstAttribute="top" secondItem="aQ5-sP-E80" secondAttribute="bottom" constant="30" id="iEg-ml-NnS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vwMeter" destination="F4g-QR-EGd" id="rBE-kj-kQv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="134"/>
         </scene>
     </scenes>
 </document>
