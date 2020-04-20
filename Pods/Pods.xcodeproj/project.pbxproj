@@ -10,7 +10,7 @@
 		26FF98E567DE648427A63E1C5FAA4872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		284BFE516C10407A4991117929A98883 /* HGSMeter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A067BED728247195FC79BE5416B6C75 /* HGSMeter-dummy.m */; };
 		3ED229C0A7161B2CEAE385F6FBAE9A7C /* Pods-HGSMeter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F4CC03A36DE9F4898A829364180FE1 /* Pods-HGSMeter_Tests-dummy.m */; };
-		41D578DF24442826007B0E63 /* HGSMeterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D578DE24442826007B0E63 /* HGSMeterClass.swift */; };
+		41D578DF24442826007B0E63 /* HGSMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D578DE24442826007B0E63 /* HGSMeter.swift */; };
 		4B062FD06444A03B2AFE7C06274566F0 /* Pods-HGSMeter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA3AB2558E287F961336B64927CEF8A /* Pods-HGSMeter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		869C44E397DE0DC2AE236FE48327DFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		87A3E0995475DA368E0B5567177D197B /* Pods-HGSMeter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACD7781D291EED2EE8EB02F7BF6873D /* Pods-HGSMeter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,7 +42,7 @@
 		3105A13A316AE3AEA804F88F8FF43FEF /* Pods-HGSMeter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGSMeter_Example-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		39D0A38401E39A6D8E48573C8D0F54A5 /* Pods_HGSMeter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGSMeter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41D578DE24442826007B0E63 /* HGSMeterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HGSMeterClass.swift; path = HGSMeter/Classes/HGSMeterClass.swift; sourceTree = "<group>"; };
+		41D578DE24442826007B0E63 /* HGSMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HGSMeter.swift; path = HGSMeter/Classes/HGSMeter.swift; sourceTree = "<group>"; };
 		49A13EEFC0CDA229765B9C97E329B049 /* HGSMeter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HGSMeter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56899AE35CE5B4E76DCD9334BEB83736 /* HGSMeter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGSMeter-umbrella.h"; sourceTree = "<group>"; };
 		5C8922C40F7F10C1FA626A3B6BD30AA4 /* Pods-HGSMeter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGSMeter_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		42B0E5BB4F0CDEEEBAC87C90FCA71302 /* HGSMeter */ = {
 			isa = PBXGroup;
 			children = (
-				41D578DE24442826007B0E63 /* HGSMeterClass.swift */,
+				41D578DE24442826007B0E63 /* HGSMeter.swift */,
 				ADF7E2A1000E5CB29EA17FDF49DE1670 /* Pod */,
 				F8CCD49B2B15753B767CB3AEB7978F9B /* Support Files */,
 			);
@@ -375,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D578DF24442826007B0E63 /* HGSMeterClass.swift in Sources */,
+				41D578DF24442826007B0E63 /* HGSMeter.swift in Sources */,
 				284BFE516C10407A4991117929A98883 /* HGSMeter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

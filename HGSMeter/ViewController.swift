@@ -12,7 +12,8 @@ import HGSMeter
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var vwMeter: HGSMeterClass!
+    @IBOutlet weak var vwMeter: HGSMeter!
+    
     
     
     override func viewDidLoad() {
