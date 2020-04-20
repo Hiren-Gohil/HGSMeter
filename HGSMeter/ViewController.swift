@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+/*
         DispatchQueue.main.async {
             let vw : HGSMeterClass?
             self.vwMeter.seperatorColor = UIColor.darkGray
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
             self.vwMeter.autoFlush = false
             self.vwMeter.setUpView()
         }
+ */
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnRandomTapped(_ sender: UIButton) {
+        /*
         UIView.animate(withDuration: 0, animations: {
             let rand = Int.random(in: 0..<self.vwMeter.maxValue)
             print("rand: ",rand)
@@ -48,6 +50,7 @@ class ViewController: UIViewController {
         }) { (success) in
             self.vwMeter.flushMeter()
         }
+ */
     }
     
 }
